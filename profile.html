@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile page - SocialBook - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <nav>
+        <div class="nav-left">
+           
+        <ul>
+           
+            <li><img src="notification.png"></li>
+            <li><img src="inbox.png"></li>
+            <li><img src="video.png"></li>
+        </ul>
+        </div>
+        
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="search.png">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="profile.jpg">
+            </div>
+            
+        </div>
+        <!-- ------dropdown-settings-menu--------- -->
+        <div class="settings-menu">
+            <div id="dark-btn">
+                <span></span>
+            </div>
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="profile.jpg">
+                    <div>
+                        <p>Yashwanth K</p>
+                        <a href="index.html">Go to Feed</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="feedback.png">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="">Help us to improve </a>
+                    </div>
+                </div>
+                <hr>
+                <div class="settings-links">
+                    <img src="setting.png" class="settings-icon">
+                    <a href="">Settings & Privacy <img src="arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="help.png" class="settings-icon">
+                    <a href="">Help & Support <img src="arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="display.png" class="settings-icon">
+                    <a href="">Display & Accessibility <img src="arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="logout.png" class="settings-icon">
+                    <a href="">Logout <img src="arrow.png" width="10px"></a>
+                </div>
+            </div>
+            
+        </div>
+    </nav>
+
+    <!-- ----profile page --------- -->
+
+<div class="profile-container">
+    <img src="cover.png" class="cover-img">
+    <div class="profile-details">
+        <div class="pd-left">
+            <div class="pd-row">
+                <img src="profile.jpg" class="pd-image">
+                <div>
+                    <h3>Yashwanth K</h3>
+                    <p>1,397 Friends - 20 mutual</p>
+                    <img src="member-1.png">
+                    <img src="member-2.png">
+                    <img src="member-3.png">
+                    <img src="member-4.png">
+                </div>
+            </div>
+        </div>
+        <div class="pd-right">
+
+            <button type="button"><img src="add-friends.png"> Friend</button>
+            <button type="button"><img src="message.png"> Message</button>
+            <br>
+            <a href=""><img src="more.png"></a>
+        </div>
+    </div>
+
+    <div class="profile-info">
+        <div class="info-col">
+
+            <div class="profile-intro">
+                <h3>Intro</h3>
+                <p class="intro-text">Believe in yourself and you can do unbelievable things. <img src="feeling.png"></p>
+                <hr>
+                <ul>
+                    <li><img src="profile-job.png"> Web Developer</li>
+                    <li><img src="profile-study.png"> Studied at Sfgc</li>
+                   
+                    <li><img src="profile-home.png"> Lives in Bangalore, India</li>
+                    <li><img src="profile-location.png"> From Bangalore, India</li>
+                </ul>
+            </div>
+
+            <div class="profile-intro">
+                <div class="title-box">
+                    <h3>Photos</h3>
+                    <a href="">All Photos</a>
+                </div>
+                
+                <div class="photo-box">
+                    <div><img src="photo1.png"></div>
+                    <div><img src="photo2.png"></div>
+                    <div><img src="photo3.png"></div>
+                    <div><img src="photo4.png"></div>
+                    <div><img src="photo5.png"></div>
+                    <div><img src="photo6.png"></div>
+                </div>
+            </div>
+
+            <div class="profile-intro">
+                <div class="title-box">
+                    <h3>Friends</h3>
+                    <a href="">All Friends</a>
+                </div>
+                <p>1,397 (20 mutual)</p>
+                <div class="friends-box">
+                    <div><img src="member-1.png"> <p>Joseph N</p></div>
+                    <div><img src="member-2.png"> <p>Nathan N</p></div>
+                    <div><img src="member-3.png"> <p>George D</p></div>
+                    <div><img src="member-4.png"> <p>Francis L</p></div>
+                    <div><img src="member-5.png"> <p>Anthony E</p></div>
+                    <div><img src="member-6.png"> <p>Michael A</p></div>
+                    <div><img src="member-7.png"> <p>Edward M</p></div>
+                    <div><img src="member-8.png"> <p>Bradon C</p></div>
+                    <div><img src="member-9.png"> <p>James Doe</p></div>
+                </div>
+            </div>
+
+            
+
+
+
+        </div>
+
+
+
+        <div class="post-col">
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="profile.jpg">
+                    <div>
+                        <p>Yashwanth K</p>
+                        <small>Public <i class="fas fa-caret-down"></i></small>
+                    </div>
+                </div>
+    
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="What's on your mind, Yashwanth?"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><img src="live-video.png"> Live Video</a>
+                        <a href="#"><img src="photo.png"> Photo/Video</a>
+                        <a href="#"><img src="feeling.png"> Feeling/Activity</a>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="profile.jpg">
+                        <div>
+                            <p>Yashwanth K</p>
+                            <span>June 24 2021, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Friends <span>@Bestfriendforever</span> heyyyeyyyeyyey <a href="">#livelifes</a> <a href="">#forver</a></p>
+                <img src="feed-image-1.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="like-blue.png"> 120</div>
+                        <div><img src="comments.png"> 45</div>
+                        <div><img src="share.png"> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="profile.jpg"> <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="profile.jpg">
+                        <div>
+                            <p>Yashwanth K</p>
+                            <span>June 24 2021, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">best friends<span>@outing</span> beach with friends are the best <a href="">#hellobeach</a> <a href="">#sand</a></p>
+                <img src="feed-image-2.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="like.png"> 198</div>
+                        <div><img src="comments.png"> 98</div>
+                        <div><img src="share.png"> 76</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="profile.jpg"> <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="profile.jpg">
+                        <div>
+                            <p>Yashwanth K</p>
+                            <span>June 24 2021, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">city outing <span>@newyorks</span>  <a href=""></a> <a href="">#like</a></p>
+                 <img src="feed-image-3.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="like.png"> 131</div>
+                        <div><img src="comments.png"> 46</div>
+                        <div><img src="share.png"> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="profile.jpg"> <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="profile.jpg">
+                        <div>
+                            <p>Yashwanth K</p>
+                            <span>June 24 2021, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text"> <span>heyyy</span>   MY WIFE DOING WORK<a href=""></a> <a href="">#addHER</a></p>
+               <img src="feed-image-4.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="like.png"> 142</div>
+                        <div><img src="comments.png"> 47</div>
+                        <div><img src="share.png"> 29</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="profile.jpg"> <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="profile.jpg">
+                        <div>
+                            <p>Yashwanth K</p>
+                            <span>June 24 2021, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">my friend is on work <span>@coding</span> heyyyyy coders<a href="">#html</a> <a href="">#javascript</a></p>
+                 <img src="feed-image-5.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="like.png"> 156</div>
+                        <div><img src="comments.png"> 23</div>
+                        <div><img src="share.png"> 2</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="profile.jpg"> <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+    <div class="footer">
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
